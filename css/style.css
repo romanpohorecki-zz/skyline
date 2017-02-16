@@ -1,0 +1,173 @@
+			/* Resets */
+
+				body, h1, h2, h3, h4, h5, h6, p, ul {
+					margin: 0;
+					padding: 0;
+				}
+
+				body {
+					font-family: 'Roboto';
+				}
+
+				a {
+					text-decoration: none;
+					border-bottom: 2px solid #000;
+				}
+
+				p {
+					line-height: 120%;
+				}
+
+			/* Common styling */
+
+				.vertical-align {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					right: 50%;
+				}
+
+				.horizontal-align {
+					display: block;
+					margin: 0 auto;
+					text-align: center;
+				}
+
+
+				h1, h2, h3, h4, h5, h6 {
+				}
+
+
+			/* Navigation */
+
+				nav {
+				}
+
+				nav a{
+				}
+
+				.logo{
+				}
+
+			/* Buttons */
+
+				.button-1 {
+				}
+
+				.button-2 {
+				}
+
+
+			/* Triangle Sections */
+
+				.triangle {
+					display: block;
+					width: 100%;
+					position: absolute;
+					left: 0;
+					right: 0;
+					z-index: 100;
+					overflow: hidden;
+				}
+
+				.triangle img{
+					display: block;
+					width: 101%;
+				}
+
+				.triangle-lower-right, .triangle-lower-left {
+					bottom: 0;
+				}
+
+				.triangle-upper-right, .triangle-upper-left {
+					top: -1px;
+				}
+
+				.triangle-upper-left img {
+					-webkit-transform: rotate(180deg);
+					-moz-transform: rotate(180deg);
+					-o-transform: rotate(180deg); 
+					-ms-transform: rotate(180deg);
+					transform: rotate(180deg);					
+				}
+
+				.triangle-lower-left img {
+					-moz-transform: scaleX(-1);
+			        -o-transform: scaleX(-1);
+			        -webkit-transform: scaleX(-1);
+			        transform: scaleX(-1);
+			        filter: FlipH;
+        			-ms-filter: "FlipH";
+				}
+
+			/* Sections */
+
+				section {
+					position: relative;
+				}
+
+				.section-dark {
+					background-color: #000;
+				}
+
+				.section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark p{
+					color: #fff;
+				}
+
+				#intro {
+					height: 600px;
+				}
+
+				#case-study {
+					height: 600px;
+					background-image: url(img/case-study-bg.jpg);
+					background-size: 100%;
+					background-size: cover;
+				}
+
+				#case-study:before{
+					content:"";
+					position: absolute;
+					z-index: 0;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background-color: rgba(0,11,36,.70);
+				}
+
+				#about {
+					height: 600px;
+					background-color: rgba(0,11,36,1);				
+				}
+
+				#integrations {
+					height: 600px;
+				}
+
+				#contact {
+					height: 600px;
+					background-image: url(img/contact-bg.jpg);
+					background-size: 100%;
+					background-size: cover;
+				}
+
+				#contact:before{
+					content:"";
+					position: absolute;
+					z-index: 0;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background-color: rgba(255,255,255,.85);
+				}
+
+
+
+			/* Footer */
+
+				footer {					
+				}
+
+				
