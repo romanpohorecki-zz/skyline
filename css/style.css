@@ -1,173 +1,330 @@
-			/* Resets */
+/* Resets */
 
-				body, h1, h2, h3, h4, h5, h6, p, ul {
-					margin: 0;
-					padding: 0;
+			body, h1, h2, h3, h4, h5, h6, p, ul {
+			    margin: 0;
+			    padding: 0;
+			}
+
+			body {
+			    font-family: 'Roboto';
+			}
+
+			a {
+			    text-decoration: none;
+			    /*border-bottom: 2px solid #000;*/
+			}
+
+			p {
+			    line-height: 120%;
+			}
+/* Common styling */
+
+			.vertical-align {
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    right: 50%;
+			}
+
+			.horizontal-align {
+			    display: block;
+			    margin: 0 auto;
+			    text-align: center;
+			}
+
+			.center-horizontally-vertically {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: row; /* works with row or column */
+			   flex-direction: row;
+			   -webkit-align-items: center;
+			   align-items: center;
+			   -webkit-justify-content: center;
+			   justify-content: center;
+
+				 flex-wrap: wrap;
+
+
+			}
+
+
+			h1 {
+				font-size: 42px;
+				font-weight: 300;
+				text-align: center;
+			}
+
+			h1, h2, h3, h4, h5, h6 {}
+
+/* Navigation */
+
+			.row {
+			    display: flex;
+			}
+
+			.split {
+			    justify-content: space-between;
+			}
+
+			.bottom {
+			    align-items: center;
+			}
+
+			.y-center {
+			    align-items: center;
+			}
+
+			header {
+			    padding: 16px 5% 8px 7%;
+			    margin-right: 7%;
+			    user-select: none;
+			    max-width: 1600px;
+			    top: 0;
+			    width: 100%;
+			    position: fixed;
+			    box-sizing: border-box;
+			    transition: top .5s ease-in-out;
+			    z-index: 100;
+			}
+
+			.semi-opaque {
+			    background-color: rgba(0, 51, 111, .9);
+			    border-bottom: grey;
+			    transition: 1s ease-in-out;
+			}
+
+			.smaller .logo img {
+			    max-height: 40px;
+			    -webkit-transition: all 0.7s;
+			    -moz-transition: all 0.7s;
+			    -ms-transition: all 0.7s;
+			    -o-transition: all 0.7s;
+			    transition: all 0.7s;
+			}
+
+			.nav-up {
+			    top: -500px;
+			}
+
+			.logo img {
+			    max-height: 68px;
+			    padding-right: 15px;
+			}
+
+			header .fa {
+			    font-size: 1.3em;
+			    display: none;
+			    cursor: pointer;
+			}
+
+			header nav a {
+			    padding-top: 15px;
+			    font-family: 'Roboto';
+			    font-weight: lighter;
+			    font-size: 14px;
+			    padding: 10px;
+			    color: black;
+			    text-decoration: none;
+			}
+
+			nav a.active {
+			    /*border-bottom: 2px solid #ecf0f1;*/
+			}
+
+			header nav a:not(:last-child) {
+			    margin-right: 15px;
+			}
+
+
+			/*nav {}
+
+			nav a {}
+
+			.logo {}*/
+
+
+/* Buttons */
+
+			.button-1 {}
+
+
+
+			.wrapper {
+					text-align: left;
+					min-width: 900px;
+					text-align: left;
+					padding: 20px 0 0 30%;
+			}
+
+			.integrate-link {
+			    background: #00B45B;
+			    display: inline-block;
+			    padding: 20px 15px;
+			    border-radius: 5px;
+			    color: #fff;
+			    font-family: 'Roboto';
+					font-weight: 300;
+			    font-size: 18px;
+			}
+
+
+
+
+			.button-2 {}
+/* Triangle Sections */
+
+			.triangle {
+			    display: block;
+			    width: 100%;
+			    position: absolute;
+			    left: 0;
+			    right: 0;
+			    z-index: 100;
+			    overflow: hidden;
+			}
+
+			.triangle img:not(.not-me) {
+			    display: block;
+			    width: 101%;
+			}
+
+			.triangle-lower-right, .triangle-lower-left {
+			    bottom: 0;
+			}
+
+			.triangle-upper-right, .triangle-upper-left {
+			    top: -1px;
+			}
+
+			.triangle-upper-left img:not(.not-me) {
+			    -webkit-transform: rotate(180deg);
+			    -moz-transform: rotate(180deg);
+			    -o-transform: rotate(180deg);
+			    -ms-transform: rotate(180deg);
+			    transform: rotate(180deg);
+			}
+
+			.triangle-lower-left img {
+			    -moz-transform: scaleX(-1);
+			    -o-transform: scaleX(-1);
+			    -webkit-transform: scaleX(-1);
+			    transform: scaleX(-1);
+			    filter: FlipH;
+			    -ms-filter: "FlipH";
+			}
+/* Sections */
+
+			section {
+			    position: relative;
+			}
+
+			/*.section-dark {
+			    background-color: #000;
+			}*/
+
+			.section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark p {
+			    color: #fff;
+			}
+
+			.wrap {
+				flex-wrap: wrap;
+
+			}
+
+			#intro {
+			    height: 600px;
+				  width: 100%;
+					background-image: url(../img/web.png);
+					background-size: cover;
+			}
+
+			#intro h1 {
+				max-width: 900px;
+				text-align: left;
+				padding: 20% 0 0 30%;
+			}
+
+			.flex-start {
+				align-content: flex-start;
+			}
+
+			#case-study {
+			    height: 600px;
+			    background-image: url(../img/case-study-bg.jpg);
+			    background-size: 100%;
+			    background-size: cover;
+			}
+
+			#case-study:before {
+			    content: "";
+			    position: absolute;
+			    z-index: 0;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    background-color: rgba(0, 11, 36, .70);
 				}
 
-				body {
-					font-family: 'Roboto';
-				}
-
-				a {
-					text-decoration: none;
-					border-bottom: 2px solid #000;
-				}
-
-				p {
-					line-height: 120%;
-				}
-
-			/* Common styling */
-
-				.vertical-align {
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					right: 50%;
-				}
-
-				.horizontal-align {
-					display: block;
-					margin: 0 auto;
-					text-align: center;
-				}
-
-
-				h1, h2, h3, h4, h5, h6 {
-				}
-
-
-			/* Navigation */
-
-				nav {
-				}
-
-				nav a{
-				}
-
-				.logo{
-				}
-
-			/* Buttons */
-
-				.button-1 {
-				}
-
-				.button-2 {
-				}
-
-
-			/* Triangle Sections */
-
-				.triangle {
-					display: block;
-					width: 100%;
-					position: absolute;
-					left: 0;
-					right: 0;
-					z-index: 100;
-					overflow: hidden;
-				}
-
-				.triangle img{
-					display: block;
-					width: 101%;
-				}
-
-				.triangle-lower-right, .triangle-lower-left {
-					bottom: 0;
-				}
-
-				.triangle-upper-right, .triangle-upper-left {
-					top: -1px;
-				}
-
-				.triangle-upper-left img {
-					-webkit-transform: rotate(180deg);
-					-moz-transform: rotate(180deg);
-					-o-transform: rotate(180deg); 
-					-ms-transform: rotate(180deg);
-					transform: rotate(180deg);					
-				}
-
-				.triangle-lower-left img {
-					-moz-transform: scaleX(-1);
-			        -o-transform: scaleX(-1);
-			        -webkit-transform: scaleX(-1);
-			        transform: scaleX(-1);
-			        filter: FlipH;
-        			-ms-filter: "FlipH";
-				}
-
-			/* Sections */
-
-				section {
+				#case-study img {
 					position: relative;
+
 				}
 
-				.section-dark {
-					background-color: #000;
+				#case-study h1, #about h1, #integrations h1 {
+					/*flex-wrap: wrap;*/
+					max-width: 640px;
+					position: relative;
+					margin: 30px 0px 30px 0;
+
 				}
 
-				.section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4, .section-dark p{
-					color: #fff;
+
+				.hundred {
+					width: 100%;
+					margin: auto;
+					display: flex;
+
 				}
 
-				#intro {
-					height: 600px;
+				#case-study p, #about p {
+					max-width: 540px;
+					text-align: center;
+					position: relative;
+					font-size: 18px;
+					font-family: 'Roboto';
+					font-weight: 300;
 				}
 
-				#case-study {
-					height: 600px;
-					background-image: url(img/case-study-bg.jpg);
-					background-size: 100%;
-					background-size: cover;
-				}
+			#about {
+			    height: 600px;
+			    background-color: rgba(0, 11, 36, 1);
+			}
 
-				#case-study:before{
-					content:"";
-					position: absolute;
-					z-index: 0;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					background-color: rgba(0,11,36,.70);
-				}
+			#integrations {
+			    height: 600px;
+			}
 
-				#about {
-					height: 600px;
-					background-color: rgba(0,11,36,1);				
-				}
+			#contact {
+			    height: 600px;
+			    background-image: url(../img/contact-bg.jpg);
+			    background-size: 100%;
+			    background-size: cover;
+			}
 
-				#integrations {
-					height: 600px;
-				}
-
-				#contact {
-					height: 600px;
-					background-image: url(img/contact-bg.jpg);
-					background-size: 100%;
-					background-size: cover;
-				}
-
-				#contact:before{
-					content:"";
-					position: absolute;
-					z-index: 0;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					background-color: rgba(255,255,255,.85);
-				}
+			#contact:before {
+			    content: "";
+			    position: absolute;
+			    z-index: 0;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+			    background-color: rgba(255, 255, 255, .85);
+			}
 
 
 
 			/* Footer */
 
-				footer {					
-				}
-
-				
+			footer {}
