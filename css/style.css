@@ -145,19 +145,25 @@
 
 /* Buttons */
 
-			.button-1 {}
+			.button-1 {
+				background-color: #00B45B;
+			}
+
+			.button-2 {
+				background-color: #FF4B4B;
+			}
 
 
 
 			.wrapper {
 					text-align: left;
-					min-width: 900px;
+					min-width: 600px;
 					text-align: left;
 					padding: 20px 0 0 30%;
 			}
 
 			.integrate-link {
-			    background: #00B45B;
+			    /*background: #00B45B;*/
 			    display: inline-block;
 			    padding: 20px 15px;
 			    border-radius: 5px;
@@ -271,7 +277,7 @@
 
 				}
 
-				#case-study h1, #about h1, #integrations h1 {
+				#case-study h1, #about h1, #integrations h1, #contact h1 {
 					/*flex-wrap: wrap;*/
 					max-width: 640px;
 					position: relative;
@@ -306,7 +312,7 @@
 			}
 
 			#contact {
-			    height: 600px;
+			    height: 900px;
 			    background-image: url(../img/contact-bg.jpg);
 			    background-size: 100%;
 			    background-size: cover;
@@ -322,6 +328,80 @@
 			    right: 0;
 			    background-color: rgba(255, 255, 255, .85);
 			}
+
+
+			form {
+    max-width: 475px;
+    width: calc(100% - 2rem);
+		position: relative;
+}
+
+ ::-webkit-input-placeholder {
+    color: #222222;
+}
+
+:-moz-placeholder {
+    color: #222222;
+}
+
+::-moz-placeholder {
+    color: #222222;
+}
+
+:-ms-input-placeholder {
+    color: #222222;
+}
+
+.feedback-input {
+    color: #4c4c4c;
+    font-family: 'Reg', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    background-color: white;
+    border: solid 1px #d2d2d2;
+    transition: all 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 5%;
+}
+
+.radius {
+    border-radius: 5px 5px 0 0;
+}
+
+.feedback-input:focus {
+    border: solid 1px #d2d2d2;
+}
+
+textarea {
+    height: 132px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Reg', sans-serif;
+    width: 100%;
+    background: #000B24;
+    border-radius: 0 0 5px 5px;
+    ;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -10px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    line-height: 32px;
+}
+
+[type="submit"]:hover {
+    background: #2f5ffd;
+}
 
 
 
