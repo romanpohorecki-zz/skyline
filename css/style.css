@@ -19,18 +19,7 @@
 			}
 /* Common styling */
 
-			.vertical-align {
-			    position: absolute;
-			    top: 50%;
-			    left: 50%;
-			    right: 50%;
-			}
 
-			.horizontal-align {
-			    display: block;
-			    margin: 0 auto;
-			    text-align: center;
-			}
 
 			.center-horizontally-vertically {
 				display: -webkit-flex;
@@ -83,14 +72,38 @@
 			    width: 100%;
 			    position: fixed;
 			    box-sizing: border-box;
-			    transition: top .5s ease-in-out;
-			    z-index: 100;
+			    z-index: 600;
+					transition: background .7s ease-in-out, padding .7s ease-in-out;
+
 			}
+
+			header nav {
+					transition: max-height .7s;
+			}
+
+			header nav.show {
+				max-height: 200px;
+				background-color: blue;
+				transition: 1s;
+}
+
+
+			header.scroll {
+  				background: rgba(255, 255, 255, .8);
+					transition: ease;
+					transition: .7s ease-in;
+  			  /*padding: 5px 5%;*/
+			}
+
 
 			.semi-opaque {
 			    background-color: rgba(0, 51, 111, .9);
 			    border-bottom: grey;
 			    transition: 1s ease-in-out;
+			}
+
+			.smaller header nav {
+				padding: 1px 5% 4px 7%;
 			}
 
 			.smaller .logo img {
@@ -286,7 +299,7 @@
 				}
 
 
-				.hundred {
+				.one-hundred-percent-width {
 					width: 100%;
 					margin: auto;
 					display: flex;
@@ -408,3 +421,18 @@ textarea {
 			/* Footer */
 
 			footer {}
+
+		 .footer {
+			 position: relative;
+			 margin-top: 7%;
+		 }
+
+		 .footer p {
+			 margin-top: 10px;
+		 }
+
+		 .Playfair-font {
+			 font-family: 'Playfair Display';
+			 font-weight: 700;
+			 font-style: italic;
+		 }
